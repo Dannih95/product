@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Product</title>
+</head>
+
+<style type="text/css">
+	body {
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	#nav-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		background-color: black;
+		position: fixed;
+		padding: 0px 50px 0px 50px;
+  		top: 0px;
+		left: 0px;
+		right: 0;
+	}
+
+	.nav-spacing {
+		padding: 20px;
+	}
+
+	#what-button {
+		padding-left: 0px;
+	}
+
+	#buy-button {
+		margin-left: auto;
+	}
+
+	a {
+		color: white;
+		text-decoration: none;
+	}
+
+	.menu-alignment {
+		text-align: center;
+		margin-top: 100px;
+	}
+
+	#what-menu {
+	}
+
+	.menu-title {
+		margin-bottom: 50px;
+	}
+
+	img {
+		height: 25%;
+		width: 25%;
+		margin-top: 20px;
+	}
+
+	.button {
+		background-color: white;
+  		border: 1px solid black;
+  		border-radius: 5px;
+  		color: white;
+  		padding: 15px 32px;
+  		text-align: center;
+  		text-decoration: none;
+  		display: inline-block;
+  		font-size: 16px;
+  		color: black;
+	}
+
+	.button:hover {
+		background-color: black;
+		color: white;
+		cursor: pointer;
+	}
+</style>
+
+<script type="text/javascript">
+	function viewTutorial() {
+		window.open("https://www.w3schools.com", "_top", "width=200,height=100");
+	}
+</script>
+
+<body>
+	<header>
+		<div id="nav-container">
+			<div id="what-button" class="nav-spacing">
+				<a href="">What is this?</a>
+			</div>
+			<div id="how-button" class="nav-spacing">
+				<a href="#how-menu">How it works?</a>
+			</div>
+			<div id="shipping-button" class="nav-spacing">
+				<a href="">Shipping</a>
+			</div>
+			<div id="faq-button" class="nav-spacing">
+				<a href="">FAQ</a>
+			</div>
+			<div id="contact-button" class="nav-spacing">
+				<a href="">Contact</a>
+			</div>
+			<div id="buy-button" class="nav-spacing">
+				<a href="">Buy</a>
+			</div>
+		</div>
+	</header>
+	<div id="what-menu" class="menu-alignment">
+		<h2 class="menu-title">WHAT IS THIS?</h2>
+		<p>This is a revolutonary kit that will help you become the most famous guy on your block.</p>
+		<p>It was created in 2018 to satisfy the ambition to have a portable and easy to build assistant for the everyday tasks.</p>
+		<p>In a world more connected in every year that passes, it is important to have someone to be hommie whenever you need the most.</p>
+		<p>So, for that, we present you the <b>Friend Kit</b>.</p>
+		<img src="what-image.jpg">
+	</div>
+	<div id="how-menu" class="menu-alignment">
+		<h2 class="menu-title">HOW IT WORKS?</h2>
+		<p>The package is composed by our brilliant Raspberry Pi hardware and PiSO, yes, PiSO. Plus all the sound harware you need and cables, etc.</p>
+		<p>PiSO is the ultima Software that helps you deal with your new assistant only using your voice. He or she will become a friend of yours thanks to PiSO!</p>
+		<img src="how-image.jpg">
+		<p>All you have to do is follow the instructions, assemble your Friend, turn it on and make a few adjustments to be at your taste.</p>
+		<p>Finally, you can start using your new Friend to help you schedule appointments, check the best route before you leave home<br>
+		or even give you tips or answer your real life questions.</p>
+		<p>Click below for a tutorial video! :-)</p>
+		<div class="button" onclick="viewTutorial();">Tutorial</div>
+	</div>
+	<footer>
+	</footer>
+</body>
+</html>
