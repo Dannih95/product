@@ -82,41 +82,43 @@
 		cursor: pointer;
 	}
 
-	#popup-align {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-	}
-
-	.opacity {
-		opacity: 1;
-	}
-
-	#video-popup {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
+	#tutorial-video {
 		position: fixed;
-		width: 75%;
-		height: 75%;
-		top: 0;
-		bottom: 0;
-		background-color: white;
-		margin: auto;
+		top: 50%;
+    	transform: translateY(-50%);
+		left: 0;
+		right: 0;
+		text-align: center;
 		visibility: hidden;
 	}
 
-	iframe {
-		display: block;
-		width: 80%;
-		height: 80%;
-		margin: auto;
+	#tutorial-exit {
+		text-align: right;
+		padding-bottom: 20px;
+		margin-right: 50px;
+	}
+
+	#tutorial-exit div:hover {
+		cursor: pointer;
 	}
 </style>
 
 <script type="text/javascript">
 	function viewTutorial() {
-		;
+		document.getElementById("tutorial-video").style.visibility = "visible";
+		var sections = document.getElementsByClassName("opacity");
+		for(let el = 0; el < sections.length; el++) {
+			sections[el].style.opacity = 0.025;
+		}
+		document.body.style["overflow-y"] = "hidden";
+	}
+
+	function exitTutorial() {
+		document.getElementById("tutorial-video").style.visibility = "hidden";
+		var sections = document.getElementsByClassName("opacity");
+		for(let el = 0; el < sections.length; el++) {
+			sections[el].style.opacity = 1;
+		}
 	}
 </script>
 
@@ -162,11 +164,14 @@
 		<p>Click below for a tutorial video! :-)</p>
 		<div class="button" onclick="viewTutorial();">Tutorial</div>
 	</div>
-	<div id="popup-align">
-		<div id="video-popup">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/JVPeg4EFAr4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<div id="tutorial-video">
+		<div id="tutorial-exit" onclick="exitTutorial()">
+			<div>X</div>
 		</div>
-	</div>
+		<div>
+			<iframe width="1280" height="720" src="https://www.youtube.com/embed/JVPeg4EFAr4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	</div>	
 	<div class="opacity">
 		<p>aohbdiagb</p>
 	</div>
