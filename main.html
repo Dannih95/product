@@ -18,7 +18,7 @@
 		padding: 0px 50px 0px 50px;
   		top: 0px;
 		left: 0px;
-		right: 0;
+		right: 0px;
 	}
 
 	.nav-spacing {
@@ -64,7 +64,7 @@
 	}
 
 	.button {
-		background-color: white;
+		background-color: #f9f9f9;
   		border: 1px solid black;
   		border-radius: 5px;
   		color: white;
@@ -78,19 +78,50 @@
 
 	.button:hover {
 		background-color: black;
-		color: white;
+		color: #f9f9f9;
 		cursor: pointer;
+	}
+
+	#popup-align {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.opacity {
+		opacity: 1;
+	}
+
+	#video-popup {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		position: fixed;
+		width: 75%;
+		height: 75%;
+		top: 0;
+		bottom: 0;
+		background-color: white;
+		margin: auto;
+		visibility: hidden;
+	}
+
+	iframe {
+		display: block;
+		width: 80%;
+		height: 80%;
+		margin: auto;
 	}
 </style>
 
 <script type="text/javascript">
 	function viewTutorial() {
-		window.open("https://www.w3schools.com", "_top", "width=200,height=100");
+		;
 	}
 </script>
 
 <body>
-	<header>
+	<header class="opacity">
 		<div id="nav-container">
 			<div id="what-button" class="nav-spacing">
 				<a href="">What is this?</a>
@@ -112,7 +143,7 @@
 			</div>
 		</div>
 	</header>
-	<div id="what-menu" class="menu-alignment">
+	<div id="what-menu" class="menu-alignment opacity">
 		<h2 class="menu-title">WHAT IS THIS?</h2>
 		<p>This is a revolutonary kit that will help you become the most famous guy on your block.</p>
 		<p>It was created in 2018 to satisfy the ambition to have a portable and easy to build assistant for the everyday tasks.</p>
@@ -120,7 +151,7 @@
 		<p>So, for that, we present you the <b>Friend Kit</b>.</p>
 		<img src="what-image.jpg">
 	</div>
-	<div id="how-menu" class="menu-alignment">
+	<div id="how-menu" class="menu-alignment opacity">
 		<h2 class="menu-title">HOW IT WORKS?</h2>
 		<p>The package is composed by our brilliant Raspberry Pi hardware and PiSO, yes, PiSO. Plus all the sound harware you need and cables, etc.</p>
 		<p>PiSO is the ultimate Software that helps you deal with your new assistant only using your voice. He or she will become a friend of yours thanks to PiSO!</p>
@@ -130,6 +161,17 @@
 		or even give you tips or answer your real life questions.</p>
 		<p>Click below for a tutorial video! :-)</p>
 		<div class="button" onclick="viewTutorial();">Tutorial</div>
+	</div>
+	<div id="popup-align">
+		<div id="video-popup">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/JVPeg4EFAr4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	</div>
+	<div class="opacity">
+		<p>aohbdiagb</p>
+	</div>
+	<div class="opacity">
+		<p>aohbdiagb</p>
 	</div>
 	<footer>
 	</footer>
