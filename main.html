@@ -6,6 +6,13 @@
 </head>
 
 <style type="text/css">
+	html, body {
+		height:100%;
+    	width:100%;
+    	margin:0;
+    	padding:0;
+	}
+
 	body {
 		font-family: Arial, Helvetica, sans-serif;
 	}
@@ -107,6 +114,8 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
+		word-wrap: break-word;
+		padding-bottom: 20px;
 	}
 
 	.shipping-spacing {
@@ -122,6 +131,35 @@
 		font-size: 500%;
 		margin-top: 20px;
 		margin-bottom: 20px;
+	}
+
+	#faq-menu {
+		padding-top: 10px;
+		padding-bottom: 20px;
+		background-color: #f9f9f9;
+		width: 100%;
+	}
+
+	.faq-question {
+		display: inline-block;
+		width: 70%;
+		border: 1px solid black;
+		border-radius: 10px;
+		word-wrap: break-word;
+		position: relative;
+	}
+
+	.faq-question-top {
+		background-color: red;
+		width: auto;
+	}
+
+	.faq-question-icon {
+		position: absolute;
+	}
+
+	.faq-question-icon i {
+		font-size: inherit;
 	}
 </style>
 
@@ -214,14 +252,24 @@
 				<div>
 					<i class="far fa-clock"></i>
 				</div>
-				<p>It takes up to 3 business days to get to you and we don't missed our delivery date.</p>
+				<p>It takes up to 3 business days to get to you and we don't miss our delivery date.</p>
 			</div>
 			<div class="shipping-spacing">
 				<div>
 					<i class="fas fa-globe"></i>
 				</div>
-				<p>Where are you from? It doesn't matter, because we can get to anyplace on the earth. And maybe in the universe one day...</p>
+				<p>Where are you from? It doesn't matter, because we can get to any place on earth. And maybe in the universe one day...</p>
 			</div>
+		</div>
+	</div>
+	<div id="faq-menu" class="menu-alignment opacity">
+		<h2 class="menu-title">FAQ</h2>
+		<div class="faq-question">
+			<div class="faq-question-top">
+				akjhdaihdauidgaidg?
+			</div>
+			<div class="faq-question-icon"><i class="fas fa-chevron-circle-up"></i></div>
+			<p>jkuaugdajkhvgdjhagvda<b>kjagdiajgdjiagd<b>kagdijkagduiakgduyakgduaydfgauydfauydfauydfauydfauyfd</p>
 		</div>
 	</div>
 	<footer>
