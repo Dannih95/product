@@ -30,6 +30,8 @@ function viewTutorial() {
 	for(let el = 0; el < sections.length; el++) {
 		sections[el].style.opacity = 0.025;
 	}
+    document.getElementById("topButton").style.position = "relative";
+    document.getElementById("topButton").style.display = "none";
 
 	document.body.style["overflow-y"] = "hidden";
 
@@ -46,6 +48,9 @@ function exitTutorial() {
 	for(let el = 0; el < sections.length; el++) {
 		sections[el].style.opacity = 1;
 	}
+    document.getElementById("topButton").style.position = "fixed";
+    document.getElementById("topButton").style.display = "block";
+
 	document.body.style["overflow-y"] = "visible";
 }
 
