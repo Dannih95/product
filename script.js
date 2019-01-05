@@ -1,3 +1,13 @@
+function hoverNavButton(elem) {
+	elem.style.backgroundColor = "white";
+	elem.childNodes[1].style.color = "black";
+}
+
+function outNavButton(elem) {
+	elem.style.backgroundColor = "black";
+	elem.childNodes[1].style.color = "white";
+}
+
 function viewTutorial() {
 	document.getElementById("tutorial-video").style.visibility = "visible";
 	var sections = document.getElementsByClassName("opacity");
