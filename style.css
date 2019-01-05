@@ -5,6 +5,10 @@ html, body {
    	padding:0;
 }
 
+header {
+	position: relative;
+}
+
 body {
 	font-family: Arial, Helvetica, sans-serif;
 }
@@ -14,7 +18,6 @@ body {
 	flex-direction: row;
 	justify-content: flex-start;
 	background-color: black;
-	position: fixed;
 	padding: 0px 50px 0px 50px;
 	top: 0px;
 	left: 0px;
@@ -34,7 +37,6 @@ body {
 }
 
 #what-menu {
-	margin-top: 100px;
 	padding-bottom: 20px;
 }
 
@@ -119,7 +121,7 @@ img {
 	word-wrap: break-word;
 }
 
-i {
+.shipping-image {
 	font-size: 500%;
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -139,17 +141,27 @@ i {
 	border-radius: 10px;
 	word-wrap: break-word;
 	position: relative;
+	margin-bottom: 25px;
 }
 
 .faq-question-top {
-	background-color: red;
 	width: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .faq-question-icon {
 	position: absolute;
+	width: auto;
+	top: 0px;
+	right: 0px;
+	margin-right: 10px;
 }
 
 .faq-question-icon i {
-	font-size: inherit;
+	margin-top: 10px;
+}
+
+.faq-answer {
+	display: none;
 }

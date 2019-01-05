@@ -22,3 +22,14 @@ function exitTutorial() {
 	}
 	document.body.style["overflow-y"] = "visible";
 }
+
+function displayFaqAnswer(elem) {
+	var answer = elem.parentNode.parentNode.childNodes[5];
+	if(elem.className === "fas fa-chevron-circle-up") {
+		elem.className = "fas fa-chevron-circle-down";
+		answer.style.display = "none";
+	} else {
+		elem.className = "fas fa-chevron-circle-up";
+		answer.style.display = "block";
+	}
+}
