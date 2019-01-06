@@ -8,4 +8,4 @@ Here's the link to the real one: https://aiyprojects.withgoogle.com/voice/
 
 NOTES:
 
-	- For it to work on Mozilla, it needs the following plugin: https://addons.mozilla.org/firefox/addon/youtube-flash-player/
+For it to work on Mozilla, it needs the following plugin: https://addons.mozilla.org/firefox/addon/youtube-flash-player/
