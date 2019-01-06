@@ -1,3 +1,14 @@
+function displayFaqAnswer(elem) {
+	var answer = elem.parentNode.parentNode.childNodes[5];
+	if(elem.className === "fas fa-chevron-circle-up") {
+		elem.className = "fas fa-chevron-circle-down";
+		answer.style.display = "none";
+	} else {
+		elem.className = "fas fa-chevron-circle-up";
+		answer.style.display = "block";
+	}
+}
+
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -41,7 +52,7 @@ function onYouTubeIframeAPIReady() {
 function viewTutorial() {
 	document.getElementById("tutorial-video").style.visibility = "visible";
 	var sections = document.getElementsByClassName("opacity");
-	for(let el = 0; el < sections.length; el++) {
+	for(var el = 0; el < sections.length; el++) {
 		sections[el].style.opacity = 0.025;
 	}
     document.getElementById("topButton").style.position = "relative";
@@ -60,22 +71,11 @@ function exitTutorial() {
 	player.pauseVideo();
 	document.getElementById("tutorial-video").style.visibility = "hidden";
 	var sections = document.getElementsByClassName("opacity");
-	for(let el = 0; el < sections.length; el++) {
+	for(var el = 0; el < sections.length; el++) {
 		sections[el].style.opacity = 1;
 	}
     document.getElementById("topButton").style.position = "fixed";
     document.getElementById("topButton").style.display = "block";
 
 	document.body.style["overflow-y"] = "visible";
-}
-
-function displayFaqAnswer(elem) {
-	var answer = elem.parentNode.parentNode.childNodes[5];
-	if(elem.className === "fas fa-chevron-circle-up") {
-		elem.className = "fas fa-chevron-circle-down";
-		answer.style.display = "none";
-	} else {
-		elem.className = "fas fa-chevron-circle-up";
-		answer.style.display = "block";
-	}
 }
