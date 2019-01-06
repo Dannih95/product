@@ -92,6 +92,7 @@ img {
 	right: 0;
 	text-align: center;
 	visibility: hidden;
+	z-index: 99;
 }
 
 #tutorial-exit {
