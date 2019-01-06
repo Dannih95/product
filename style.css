@@ -159,6 +159,10 @@ img {
 	margin-right: 10px;
 }
 
+.faq-question-icon:hover {
+	cursor: pointer;
+}
+
 .faq-question-icon i {
 	margin-top: 10px;
 }

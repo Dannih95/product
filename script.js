@@ -1,17 +1,3 @@
-var tag = document.createElement('script');
-tag.id = 'iframe-demo';
-tag.src = 'https://www.youtube.com/iframe_api';
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-var player;
-function onYouTubeIframeAPIReady() {
-	player = new YT.Player('iframe-video', {
-	    events: {
-	    }
-	});
-}
-
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -38,6 +24,20 @@ function outNavButton(elem) {
 	elem.childNodes[1].style.color = "white";
 }
 
+var tag = document.createElement('script');
+tag.id = 'iframe-demo';
+tag.src = 'https://www.youtube.com/iframe_api';
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+var player;
+function onYouTubeIframeAPIReady() {
+	player = new YT.Player('iframe-video', {
+	    events: {
+	    }
+	});
+}
+
 function viewTutorial() {
 	document.getElementById("tutorial-video").style.visibility = "visible";
 	var sections = document.getElementsByClassName("opacity");
@@ -50,7 +50,7 @@ function viewTutorial() {
 	document.body.style["overflow-y"] = "hidden";
 
 	document.onkeydown = function(e) {
-		if(e.key === "Escape") {
+		if(e.keyCode === 27) { // ESC Button
 			exitTutorial();
 		}
 	}
