@@ -79,3 +79,8 @@ function exitTutorial() {
 
 	document.body.style["overflow-y"] = "visible";
 }
+
+// For the buy page
+function showBuyPage() {
+	document.getElementsByTagName("body")[0].innerHTML += "teste";
+}

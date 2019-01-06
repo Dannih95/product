@@ -36,6 +36,10 @@ body {
 	margin-left: auto;
 }
 
+#buy-button > a:hover {
+	cursor: pointer;
+}
+
 #what-menu {
 	padding-bottom: 20px;
 }
