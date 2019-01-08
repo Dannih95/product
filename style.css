@@ -11,6 +11,7 @@ header {
 
 body {
 	font-family: Arial, Helvetica, sans-serif;
+	background-color: #f9f9f9;
 }
 
 #nav-container {
@@ -173,6 +174,29 @@ img {
 
 .faq-answer {
 	display: none;
+}
+
+#buy-content {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: red;
+}
+
+#buy-content img {
+	margin-right: 100px;
+	margin-top: 0px;
+}
+
+#buy-quantity {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: blue;
+}
+
+#quantity-number {
+	margin-top: 10px;
 }
 
 #topButton {
