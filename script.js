@@ -81,6 +81,39 @@ function exitTutorial() {
 }
 
 // For the buy page
-function showBuyPage() {
-	document.getElementsByTagName("body")[0].innerHTML += "teste";
+function incrementQuantity() {
+	var quantityToBuy = document.getElementById("quantity-number").firstElementChild.innerHTML;
+	var quantityNumber;
+	if(quantityToBuy === "0") {
+		quantityNumber = 1;
+		document.getElementById("quantity-number").firstElementChild.innerHTML = quantityNumber;
+	} else {
+		quantityNumber = parseInt(quantityToBuy);
+		quantityNumber++;
+		document.getElementById("quantity-number").firstElementChild.innerHTML = quantityNumber;
+	}
+}
+
+function decrementQuantity() {
+	var quantityToBuy = document.getElementById("quantity-number").firstElementChild.innerHTML;
+	var quantityNumber;
+	if(quantityToBuy === "0") {
+		;
+	}
+	else if(quantityToBuy === "1") {
+		document.getElementById("quantity-number").firstElementChild.innerHTML = 0;
+	} else {
+		quantityNumber = parseInt(quantityToBuy);
+		quantityNumber--;
+		document.getElementById("quantity-number").firstElementChild.innerHTML = quantityNumber;
+	}
+}
+
+function buy() {
+	var quantityToBuy = document.getElementById("quantity-number").firstElementChild.innerHTML
+	if(quantityToBuy === "0") {
+		window.alert("Can't buy 0 items.");
+	} else {
+		window.alert("Congratulations! You just bought " + quantityToBuy + " item(s)!");
+	}
 }

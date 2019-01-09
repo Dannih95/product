@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Product</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<meta charset="UTF-8">
+</head>
+
+<script src="script.js"></script>
+
+<body style="background-color: #f9f9f9;">
+	<header class="opacity">
+		<div id="nav-container">
+			<div id="what-button" class="nav-spacing" onmouseover="hoverNavButton(this)" onmouseout="outNavButton(this)">
+				<a href="main.html#what-menu">What is this?</a>
+			</div>
+			<div id="how-button" class="nav-spacing" onmouseover="hoverNavButton(this)" onmouseout="outNavButton(this)">
+				<a href="main.html#how-menu">How it works?</a>
+			</div>
+			<div id="shipping-button" class="nav-spacing" onmouseover="hoverNavButton(this)" onmouseout="outNavButton(this)">
+				<a href="main.html#shipping-menu">Shipping</a>
+			</div>
+			<div id="faq-button" class="nav-spacing" onmouseover="hoverNavButton(this)" onmouseout="outNavButton(this)">
+				<a href="main.html#faq-menu">FAQ</a>
+			</div>
+			<div id="contact-button" class="nav-spacing" onmouseover="hoverNavButton(this)" onmouseout="outNavButton(this)">
+				<a href="">Contact</a>
+			</div>
+			<div id="buy-button" class="nav-spacing" onmouseover="hoverNavButton(this)" onmouseout="outNavButton(this)" onclick="showBuyPage()">
+				<a href="buy.html">Buy</a>
+			</div>
+		</div>
+	</header>
+	<div id="buy-menu" class="menu-alignment opacity">
+		<h2 class="menu-title">BUY</h2>
+		<div id="buy-content">
+			<img id="buy-image" src="buy-image.jpg">
+			<div id="buy-quantity">
+				<div>
+					Quantity
+				</div>
+				<div id="quantity-number">
+					<p>0</p>
+					<div><i class="fas fa-plus-circle" onclick="incrementQuantity()"></i></div>
+					<div><i class="fas fa-minus-circle" onclick="decrementQuantity()"></i></div>
+				</div>
+				<button id="buy-button-page" class="button" onclick="buy()">Buy</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
