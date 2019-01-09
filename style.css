@@ -180,7 +180,6 @@ img {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	background-color: red;
 }
 
 #buy-content img {
@@ -192,10 +191,28 @@ img {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	background-color: blue;
 }
 
 #quantity-number {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 25px;
+}
+
+#quantity-number p {
+	margin: 0px 20px 0px 0px;
+}
+
+.fa-minus-circle {
+	margin-left: 5px;
+}
+
+.fa-plus-circle:hover, .fa-minus-circle:hover {
+	cursor: pointer;
+}
+
+#buy-button-page {
 	margin-top: 10px;
 }
 
