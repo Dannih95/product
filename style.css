@@ -233,3 +233,12 @@ img {
 #topButton I {
 	font-size: 25px;
 }
+
+footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 10px;
+	font-size: 12px;
+	bottom: 0px;
+}
