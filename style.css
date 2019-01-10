@@ -235,10 +235,22 @@ img {
 }
 
 footer {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	margin-top: 10px;
-	font-size: 12px;
+	width: 100%;
 	bottom: 0px;
+	left: 0px;
+	text-align: center;
+	font-size: 12px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#footer-buy {
+	position: fixed;
+	width: 100%;
+	bottom: 0px;
+	left: 0px;
+	text-align: center;
+	font-size: 12px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
